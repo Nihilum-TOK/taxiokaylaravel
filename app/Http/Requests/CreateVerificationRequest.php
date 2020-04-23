@@ -27,6 +27,8 @@ class CreateVerificationRequest extends FormRequest
             // verificar reglas de validación
             'plate' => 'required',
             'taxinumber' => 'required',
+            'name' => 'required',
+            'status' => 'required',
         ];
 
         //para usarlo se pon en func store(CreateProjectRequest) del controller y se importa

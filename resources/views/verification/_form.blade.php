@@ -11,5 +11,17 @@
 	{!! $errors->first('taxinumber', '<small>:message</small><br>') !!}
 </label>
 
+<label>
+	Nombre Conductor <br>
+	<input type="text" name="name" value="{{ old('name',$verification->name) }}"><br>
+	{!! $errors->first('name', '<small>:message</small><br>') !!}
+</label>
+
+<label>
+	Estatus <br>
+	<input type="text" name="status" value="{{ old('status',$verification->status) }}"><br>
+	{!! $errors->first('status', '<small>:message</small><br>') !!}
+</label>
+
 
 <button>{{$btnText}}</button>

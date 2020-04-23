@@ -9,6 +9,12 @@
 	<p>
 		{{$verification->plate}}
 	</p>
+	<p>
+		{{$verification->name}}
+	</p>
+	<p>
+		{{$verification->status}}
+	</p>
 
 
 

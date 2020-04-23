@@ -18,6 +18,8 @@ class CreateVerificationsTable extends Migration
             $table->string('plate');
             $table->string('taxinumber');
             $table->string('qrcode')->nullable();
+            $table->string('status');
+            $table->string('name')->nullable();
             $table->timestamps();
         });
     }
