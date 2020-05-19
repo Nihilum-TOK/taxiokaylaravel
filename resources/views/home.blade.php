@@ -18,7 +18,7 @@
                 </div>
                 <a class="btn btn-success"  href="{{route('verification.create')}}"> Agregar </a>
                 <a class="btn btn-info"  href="{{route('verification.indexplate')}}"> Matricula </a>
-                <a class="btn btn-primary"  href="#"> # Taxi </a>
+                <a class="btn btn-primary"  href="{{route('verification.indextaxinumber')}}"> # Taxi </a>
                 <a class="btn btn-warning"  href="#"> Codigo QR </a>
             </div>
         </div>

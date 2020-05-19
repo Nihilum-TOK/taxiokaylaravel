@@ -33,6 +33,23 @@ class VerificationController extends Controller
 
     }
 
+    public function indextaxinumber(){
+        return view('verification.indextaxinumber',[ 'verification'=> new Verification]);
+    }
+
+    public function showtaxinumber(Request $request){
+        $fields = request()->validate([
+            'taxinumber' => 'required',
+         ]);
+        // return $request->get('taxinumber');
+        // return Verification::where('taxinumber', '=', $request->get('taxinumber'))->firstOrFail();
+
+        return view('verification.show', [
+            'verification' =>   Verification::where('taxinumber', '=', $request->get('taxinumber'))->firstOrFail()
+        ]);
+
+    }
+
     public function create(){
 
         return view('verification.create',[ 'verification'=> new Verification]);

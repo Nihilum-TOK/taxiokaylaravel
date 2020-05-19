@@ -24,3 +24,9 @@ Route::get('/home/create', 'VerificationController@create')->name('verification.
 Route::post('/home','VerificationController@store')->name('verification.store');
 Route::get('/home/plate', 'VerificationController@indexplate')->name('verification.indexplate');
 Route::post('/home/plate', 'VerificationController@showplate')->name('verification.showplate');
+Route::get('/home/taxinumber', 'VerificationController@indextaxinumber')->name('verification.indextaxinumber');
+Route::post('/home/taxinumber', 'VerificationController@showtaxinumber')->name('verification.showtaxinumber');
+
+Route::get('/templete', function () {
+    return view('templete');
+})->name('templete');
